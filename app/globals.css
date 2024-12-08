@@ -24,4 +24,10 @@ body {
   .text-balance {
     text-wrap: balance;
   }
+
+  .link-separator:not(:last-child)::after {
+    content: "|";
+    margin-left: 10px;
+    margin-right: 4px; /* Gap after separator */
+  }
 }
